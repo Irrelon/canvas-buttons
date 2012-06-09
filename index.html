@@ -1,0 +1,29 @@
+<html>
+<head>
+	<!-- jQuery -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+	<!-- Canvas Buttons -->
+	<script src="js/canvas-buttons.js"></script>
+
+	<!-- Init -->
+	<script type="text/javascript">
+		$(document).ready(function () {
+			// Create a new canvas buttons instance with
+			// the "main" canvas element
+			var cb = new CanvasButtons('main');
+			window.cb = cb;
+			cb.width(200);
+			cb.height(50);
+			cb.borderWidth(5);
+			cb.borderColor('#000000');
+			cb.borderRadius(16);
+			cb.backgroundColor('#333');
+			cb.render();
+		});
+	</script>
+</head>
+<body>
+	<canvas id="main" width="400" height="200" style="border: 1px solid #000;"></canvas>
+</body>
+</html>
